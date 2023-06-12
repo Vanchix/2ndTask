@@ -10,13 +10,12 @@ var input2 = Console.ReadLine();
 
 var symbol = Convert.ToChar(input2);
 
-/*while (symbol != '+' || symbol != '-' || symbol != '/' || symbol != '*' || symbol != '%') 
+while (symbol != '+' & symbol != '-' & symbol != '/' & symbol != '*' & symbol != '%') 
 {
     Console.WriteLine("Ошибка! Это не знак операции"); 
     Console.WriteLine("Введите знак операции");
     input2 = Console.ReadLine();
-//Не понимаю почему при вводе знака операции программа все равно действует по пути что введен не знак операции
-}*/
+}
 
 Console.WriteLine("Введите второе число");
 
@@ -42,6 +41,6 @@ switch (input2)
         Console.WriteLine("Остато от деления двух чисел равен " + (a % b));
         break;
     default:
-        Console.WriteLine("Ошибка! Введен не знак операции");
+        Console.WriteLine("Ошибка!");
         break;
 }
