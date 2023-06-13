@@ -1,4 +1,4 @@
-﻿//char t;
+﻿char t;
 
 do
 {
@@ -48,6 +48,6 @@ do
             Console.WriteLine("Ошибка!");
             break;
     }
-    //Console.WriteLine("Нажмите p чтобы выйти из программы");
-    //t = Convert.ToChar(Console.ReadLine());
-} while (Console.ReadKey().KeyChar == 'f');
+    Console.WriteLine("Нажмите f чтобы выйти из программы");
+    t = Convert.ToChar(Console.ReadLine());
+} while (t != 'f');
