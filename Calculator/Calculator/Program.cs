@@ -14,11 +14,12 @@ do
 
     var symbol = Convert.ToChar(input2);
 
-    while (symbol != '+' & symbol != '-' & symbol != '/' & symbol != '*' & symbol != '%')
+    while (symbol != '+' && symbol != '-' && symbol != '/' && symbol != '*' && symbol != '%')
     {
         Console.WriteLine("Ошибка! Это не знак операции");
         Console.WriteLine("Введите знак операции");
         input2 = Console.ReadLine();
+        symbol = Convert.ToChar(input2);
     }
 
     Console.WriteLine("Введите второе число");
@@ -43,9 +44,6 @@ do
             break;
         case "%":
             Console.WriteLine("Остато от деления двух чисел равен " + (a % b));
-            break;
-        default:
-            Console.WriteLine("Ошибка!");
             break;
     }
     Console.WriteLine("Нажмите f чтобы выйти из программы");
